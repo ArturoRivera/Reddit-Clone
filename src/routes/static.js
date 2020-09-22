@@ -1,0 +1,8 @@
+const express = require("express");
+const router = express.Router();
+
+router.get("/", (request, response, next) => {
+  response.send("Welcome to Reddit");
+});
+
+module.exports = router;
