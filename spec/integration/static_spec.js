@@ -10,7 +10,7 @@ describe("routes : static", () => {
 
       // Tests to make sure we get status code 200 when requesting
       // the server using that route
-      it("Should return status code 200", (done) => {
+      it("Should return status code 200 and have 'Welcome to Reddit in the body of the response'", (done) => {
 
         // Sends GET request to te base URL.
         // All request making methods take a function as a second
@@ -18,7 +18,7 @@ describe("routes : static", () => {
         // server as well as content and any errors.
         request.get(base, (error, response, body) => {
           expect(response.statusCode).toBe(200);
-
+          expect(body).toContain("Welcome to Reddit");
           // Lets Jasmine know our test is completed.
           done();
         });
