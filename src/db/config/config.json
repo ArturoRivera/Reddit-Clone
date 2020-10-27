@@ -21,6 +21,6 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "use_env_variable": "postgresql-rugged-45543"
+    "use_env_variable": "postgres://pvhqtptlzahvvb:7b1b8457ed08e8a453b171a5f62e45ebc3248ef27fa124bbb6cacd3f055c08bc@ec2-54-86-57-171.compute-1.amazonaws.com:5432/dd77907qnjjsc"
   }
 }
